@@ -1,0 +1,8 @@
+.git
+.next
+node_modules
+.tmp-vercel-npm-cache
+tmp
+/images
+*.log
+*.tsbuildinfo
