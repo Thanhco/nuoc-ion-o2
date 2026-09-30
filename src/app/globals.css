@@ -193,7 +193,7 @@ a.footer-contact-group:hover { color:#fff; transform:translateX(2px); }
 .products-list .section-heading-description { max-width:650px; font-size:18px; line-height:1.6; }
 
 .about-hero { position:relative; min-height:clamp(580px,36vw,680px); overflow:hidden; isolation:isolate; background:#dff6fa; }
-.about-hero__background { position:absolute; inset:0; z-index:0; background-image:url("/images/gioithieu.png"); background-repeat:no-repeat; background-size:cover; background-position:center 52%; }
+.about-hero__background { position:absolute; inset:0; z-index:0; background-image:url("/images/gioithieu.png?v=20260930-1"); background-repeat:no-repeat; background-size:cover; background-position:center 52%; }
 .about-hero__readability { position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.84) 24%,rgba(255,255,255,.5) 40%,rgba(255,255,255,.12) 58%,rgba(255,255,255,0) 70%); }
 .about-hero .container { position:relative; z-index:2; }
 .about-hero .breadcrumbs { padding-bottom:34px; }
@@ -1758,7 +1758,7 @@ a.footer-contact-group:hover { color:#fff; transform:translateX(2px); }
 
 /* TEMP: replace with /images/lienhe.png when final contact artwork is available. */
 .contact-hero {
-  --contact-hero-image: url("/images/gioithieu.png");
+  --contact-hero-image: url("/images/gioithieu.png?v=20260930-1");
   position:relative;
   min-height:0;
   overflow:hidden;
