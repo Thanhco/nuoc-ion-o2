@@ -6,7 +6,7 @@ export type Product = {
   category: string;
   shortDescription: string;
   description?: string;
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; width: number; height: number }[];
   features: string[];
   specifications?: { label: string; value: string }[];
   seoTitle?: string;
@@ -21,7 +21,7 @@ export const products: Product[] = [
     capacity: "20 lít",
     category: "Gia đình",
     shortDescription: "Phù hợp cho nhu cầu sử dụng tại gia đình và văn phòng.",
-    images: [{ src: "/images/big-bottle.png", alt: "Bình nước O2 20 lít" }],
+    images: [{ src: "/images/big-bottle.png", alt: "Bình nước O2 20 lít", width: 421, height: 593 }],
     features: ["Gia đình", "Văn phòng", "20 lít"],
   },
   {
@@ -31,8 +31,18 @@ export const products: Product[] = [
     capacity: "80 lít",
     category: "Gia đình / Văn phòng",
     shortDescription: "Bộ 4 bình 20 lít cho nhu cầu sử dụng thường xuyên.",
-    images: [{ src: "/images/combo-4-bottles.png", alt: "Combo bốn bình nước O2 20 lít" }],
+    images: [{ src: "/images/combo-4-bottles.png", alt: "Combo bốn bình nước O2 20 lít", width: 700, height: 380 }],
     features: ["Combo 4 bình", "80 lít", "Nhu cầu lâu dài"],
+  },
+  {
+    id: 4,
+    slug: "chai-500ml",
+    name: "Chai 500ml",
+    capacity: "500ml",
+    category: "Cá nhân",
+    shortDescription: "Chai dung tích 500ml cho nhu cầu sử dụng hằng ngày.",
+    images: [{ src: "/images/o2-500ml.png", alt: "Chai nước O2 500ml", width: 379, height: 1058 }],
+    features: ["500ml", "Đóng chai"],
   },
   {
     id: 3,
@@ -41,7 +51,7 @@ export const products: Product[] = [
     capacity: "250ml",
     category: "Cá nhân",
     shortDescription: "Kích thước nhỏ gọn, thuận tiện mang theo khi đi học hoặc đi làm.",
-    images: [{ src: "/images/small-bottle.png", alt: "Chai nước O2 250ml" }],
+    images: [{ src: "/images/o2-250ml.png", alt: "Chai nước O2 250ml", width: 367, height: 718 }],
     features: ["Nhỏ gọn", "250ml", "Mang theo"],
   },
 ];

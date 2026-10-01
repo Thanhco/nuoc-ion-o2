@@ -46,7 +46,7 @@ export default function AboutPage() {
       <section className="about-story about-story--small">
         <div className="container about-story__grid about-story__grid--reverse">
           <Reveal className="about-story__copy-reveal" reveal="fade-left"><div className="about-story__copy"><p className="eyebrow">CHAI 250ML</p><h2><span>Nhỏ gọn cho</span><span>nhu cầu mang theo.</span></h2><p>Chai 250ml có kích thước nhỏ gọn, thuận tiện mang theo khi đi học, đi làm hoặc trong các hoạt động hằng ngày.</p><Button href="/san-pham/chai-250ml-tien-loi" variant="text">Xem sản phẩm <ArrowUpRight /></Button></div></Reveal>
-          <Reveal className="about-story__visual-reveal" reveal="fade-right"><div className="about-story__visual about-story__visual--small" aria-label="Chai nước O2 250ml"><span className="about-story__stage" aria-hidden="true" /><Image src="/images/small-bottle.png" alt="Chai nước O2 250ml" width={896} height={896} sizes="(max-width: 767px) 62vw, 25vw" /></div></Reveal>
+          <Reveal className="about-story__visual-reveal" reveal="fade-right"><div className="about-story__visual about-story__visual--small" aria-label="Chai nước O2 250ml"><span className="about-story__stage" aria-hidden="true" /><Image src="/images/o2-250ml.png" alt="Chai nước O2 250ml" width={367} height={718} sizes="(max-width: 767px) 62vw, 25vw" /></div></Reveal>
         </div>
       </section>
 

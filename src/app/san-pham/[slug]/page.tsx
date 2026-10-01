@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const product = getProductBySlug(slug);
   if (!product) return createMetadata("Sản phẩm không tồn tại | Nước O2", undefined, `/san-pham/${slug}`);
   const image = product.images[0];
-  const dimensions = product.slug === "chai-250ml-tien-loi" ? { width: 896, height: 896 } : { width: 421, height: 593 };
+  const dimensions = { width: image.width, height: image.height };
   return createMetadata(product.seoTitle ?? `${product.name} | Nước O2`, product.seoDescription ?? product.shortDescription, `/san-pham/${product.slug}`, { image: { ...dimensions, url: image.src, alt: image.alt } });
 }
 

@@ -2224,3 +2224,57 @@ html .products-list .product-card-image .product-visual-small > img { max-width:
   html .about-hero .about-hero__title span { white-space:normal; }
   html .about-hero .about-hero__background { background-size:auto 58%; background-position:85% bottom; }
 }
+
+/* Shared hero rhythm: Vietnamese accents need clearance between line boxes. */
+html .home-hero__title { line-height:1.06; }
+
+/* Owner-supplied bottle crops keep their intrinsic proportions in each stage. */
+html .product-visual.product-visual-bottle {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  --bottle-max-width:60%;
+  --bottle-max-height:76%;
+}
+html .product-visual.product-visual--500ml {
+  --bottle-max-width:52%;
+  --bottle-max-height:88%;
+}
+html .product-card .product-card-image .product-visual.product-visual-bottle > img,
+html .product-visual-detail.product-visual-bottle > img {
+  position:static !important;
+  width:auto !important;
+  height:auto !important;
+  max-width:var(--bottle-max-width) !important;
+  max-height:var(--bottle-max-height) !important;
+  object-fit:contain;
+  transform:none !important;
+}
+html .product-visual-detail.product-visual-bottle {
+  position:absolute;
+  inset:0;
+  --bottle-max-width:64%;
+  --bottle-max-height:76%;
+}
+html .product-visual-detail.product-visual--500ml { --bottle-max-height:88%; }
+
+@media (min-width:1200px) {
+  .home-products-editorial .product-grid,.products-list .product-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+}
+@media (min-width:621px) and (max-width:1199px) {
+  .home-products-editorial .product-grid,.products-list .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:620px) {
+  .home-products-editorial .product-grid,.products-list .product-grid { grid-template-columns:minmax(0,1fr); }
+}
+@media (max-width:768px) {
+  html .product-card-image .product-visual,
+  html .product-card-image .product-visual > img,
+  html .product-detail-visual .product-visual-bottle,
+  html .product-detail-visual .product-visual-bottle > img,
+  html .about-story__visual--small img {
+    transform:none !important;
+    animation:none !important;
+    transition:none !important;
+  }
+}
