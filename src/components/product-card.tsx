@@ -4,11 +4,11 @@ import { ProductVisual } from "@/components/product-visual";
 import { Reveal } from "@/components/reveal";
 import type { Product } from "@/data/products";
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({ product, mobileImageSource }: { product: Product; mobileImageSource?: string }) {
   return <Reveal className="product-card-reveal">
     <article className="product-card">
       <Link href={`/san-pham/${product.slug}`} className="product-card-image" aria-label={`Xem ${product.name}`}>
-        <ProductVisual product={product} />
+        <ProductVisual product={product} mobileImageSource={mobileImageSource} />
       </Link>
       <div className="product-card-body">
         <div className="product-card-meta"><span>{product.category}</span><span className="product-capacity-badge">{product.capacity}</span></div>

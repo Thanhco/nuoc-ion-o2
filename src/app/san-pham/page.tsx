@@ -29,7 +29,7 @@ export default function ProductsPage() {
       <section className="products-list">
         <div className="container">
           <div className="product-grid">
-            {products.map((product) => <ProductCard key={product.id} product={product} />)}
+            {products.map((product) => <ProductCard key={product.id} product={product} mobileImageSource={product.slug === "binh-20l-tieu-chuan" ? "/images/big-bottle-mobile-cropped.png" : undefined} />)}
           </div>
         </div>
       </section>

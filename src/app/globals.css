@@ -2288,13 +2288,6 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
 
 @media (max-width:767px) { .about-story__visual--500ml img { width:min(48%,210px); height:310px; } }
 
-/* The 20L source has transparent top/bottom padding; let its image box fill the mobile stage. */
-@media (max-width:768px) {
-  html .products-list .product-card .product-card-image .product-visual.product-visual-binh-20l-tieu-chuan > img {
-    max-height:108% !important;
-  }
-}
-
 /* Product-detail studio: diffused light, a quiet waterline and soft grounding. */
 .product-detail-visual {
   isolation:isolate;
@@ -2329,4 +2322,45 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
 @media (max-width:768px) {
   .product-detail-visual { box-shadow:0 14px 32px rgba(20,90,120,.055),inset 0 1px 0 rgba(255,255,255,.88); }
   .product-detail-visual::after { left:20%; right:20%; bottom:6%; height:9%; filter:blur(9px); }
+}
+
+/* Keep desktop artwork unchanged; mobile listing uses the lossless tight crop. */
+.products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture {
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  aspect-ratio:421 / 593;
+  height:94%;
+  max-width:78%;
+  transform:translate(-50%,-50%);
+}
+.products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture > img {
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  object-fit:contain;
+}
+@media (max-width:768px) {
+  .products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture {
+    position:relative;
+    inset:auto;
+    width:100%;
+    height:100%;
+    max-width:none;
+    aspect-ratio:auto;
+    transform:none;
+  }
+  .products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture > img {
+    width:auto;
+    height:auto;
+    max-width:68%;
+    max-height:86%;
+    object-fit:contain;
+    transform:none !important;
+  }
 }
