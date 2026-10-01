@@ -2173,6 +2173,9 @@ html .products-list .product-card-image .product-visual-small > img { max-width:
   position:absolute; width:1px; height:1px; padding:0; margin:-1px;
   overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
 }
+.about-story--500ml { background:#f7fcfd; }
+.about-story__visual--500ml img { width:min(42%,260px); height:430px; }
+
 /* Shared hero rhythm: Vietnamese accents need clearance between line boxes. */
 html .home-hero__title { line-height:1.06; }
 
@@ -2282,3 +2285,5 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
   .product-detail-visual .product-visual-detail > img { transform:none !important; animation:none !important; transition:none !important; }
   .product-detail-visual .product-visual-combo { --detail-image-width:88%; }
 }
+
+@media (max-width:767px) { .about-story__visual--500ml img { width:min(48%,210px); height:310px; } }

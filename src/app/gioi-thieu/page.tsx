@@ -51,6 +51,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="about-story about-story--500ml">
+        <div className="container about-story__grid">
+          <Reveal className="about-story__visual-reveal" reveal="fade-left"><div className="about-story__visual about-story__visual--small about-story__visual--500ml" aria-label="Chai nước O2 500ml"><span className="about-story__stage" aria-hidden="true" /><Image src="/images/o2-500ml.png" alt="Chai nước O2 500ml" width={379} height={1058} sizes="(max-width: 767px) 42vw, 18vw" /></div></Reveal>
+          <Reveal className="about-story__copy-reveal" reveal="fade-right"><div className="about-story__copy"><p className="eyebrow">CHAI 500ML</p><h2><span>Thêm dung tích</span><span>cho mỗi ngày.</span></h2><p>Chai 500ml gọn nhẹ, thuận tiện mang theo khi đi học, đi làm hoặc sử dụng trong ngày.</p><Button href="/san-pham/chai-500ml" variant="text">Xem sản phẩm <ArrowUpRight /></Button></div></Reveal>
+        </div>
+      </section>
+
       <section className="about-final-cta"><Reveal className="container about-final-cta__inner"><div><p className="eyebrow">BẮT ĐẦU TỪ NHU CẦU CỦA BẠN</p><h2><span>Chọn sản phẩm O2</span><span>phù hợp với bạn.</span></h2><p>Khám phá các dung tích hiện có và lựa chọn theo nhu cầu sử dụng.</p></div><div className="about-final-cta__actions"><Button href="/san-pham">Xem sản phẩm <ArrowUpRight /></Button><Button href="/lien-he" variant="secondary">Đặt nước ngay <ArrowUpRight /></Button></div></Reveal></section>
 
       <BreadcrumbJsonLd items={breadcrumbs} />
