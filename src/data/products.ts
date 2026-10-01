@@ -31,7 +31,7 @@ export const products: Product[] = [
     capacity: "80 lít",
     category: "Gia đình / Văn phòng",
     shortDescription: "Bộ 4 bình 20 lít cho nhu cầu sử dụng thường xuyên.",
-    images: [{ src: "/images/combo-4-bottles.png", alt: "Combo bốn bình nước O2 20 lít", width: 700, height: 380 }],
+    images: [{ src: "/images/combo-4-binh-20l-cropped.png", alt: "Combo bốn bình nước O2 20 lít", width: 603, height: 271 }],
     features: ["Combo 4 bình", "80 lít", "Nhu cầu lâu dài"],
   },
   {

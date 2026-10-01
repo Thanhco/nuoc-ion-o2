@@ -15,7 +15,7 @@ export function ProductVisual({ product, variant = "card" }: ProductVisualProps)
       alt={image.alt}
       width={image.width}
       height={image.height}
-      sizes={isCombo ? "(max-width: 767px) 88vw, 28vw" : variant === "detail" ? "(max-width: 767px) 82vw, 43vw" : "(max-width: 767px) 76vw, 29vw"}
+      sizes={variant === "detail" ? "(max-width: 1023px) 88vw, 38vw" : isCombo ? "(max-width: 620px) 88vw, (max-width: 1199px) 42vw, 24vw" : "(max-width: 767px) 76vw, 29vw"}
     />
   </div>;
 }
