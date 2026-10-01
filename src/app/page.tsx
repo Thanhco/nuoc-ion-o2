@@ -38,7 +38,7 @@ export default function HomePage() {
             <div><p className="eyebrow">SẢN PHẨM O2</p><h2><span>Chọn dung tích</span><span>phù hợp với bạn.</span></h2></div>
             <Button href="/san-pham" variant="text">Xem tất cả sản phẩm <ArrowUpRight /></Button>
           </Reveal>
-          <div className="product-grid editorial-product-grid">{products.map((product) => <ProductCard key={product.id} product={product} />)}</div>
+          <div className="product-grid editorial-product-grid">{products.map((product) => <ProductCard key={product.id} product={product} mobileImageSource={product.slug === "binh-20l-tieu-chuan" ? "/images/big-bottle-mobile-cropped.png" : undefined} />)}</div>
         </div>
       </section>
 

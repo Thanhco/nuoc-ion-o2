@@ -2325,6 +2325,7 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
 }
 
 /* Keep desktop artwork unchanged; mobile listing uses the lossless tight crop. */
+.editorial-product-grid .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture,
 .products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture {
   position:absolute;
   top:50%;
@@ -2337,6 +2338,7 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
   max-width:78%;
   transform:translate(-50%,-50%);
 }
+.editorial-product-grid .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture > img,
 .products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture > img {
   display:block;
   width:100%;
@@ -2346,6 +2348,7 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
   object-fit:contain;
 }
 @media (max-width:768px) {
+  .editorial-product-grid .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture,
   .products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture {
     position:relative;
     inset:auto;
@@ -2355,6 +2358,7 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
     aspect-ratio:auto;
     transform:none;
   }
+  .editorial-product-grid .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture > img,
   .products-list .product-visual-binh-20l-tieu-chuan > .product-visual__responsive-picture > img {
     width:auto;
     height:auto;
