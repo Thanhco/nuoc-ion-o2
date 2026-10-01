@@ -26,6 +26,20 @@ export const newsArticles: NewsArticle[] = [
     ],
   },
   {
+    slug: "o2-bo-sung-san-pham-chai-500ml",
+    title: "O2 bổ sung sản phẩm chai 500ml",
+    excerpt: "O2 vừa bổ sung chai 500ml vào danh mục sản phẩm, thêm lựa chọn bên cạnh chai 250ml.",
+    category: "CẬP NHẬT SẢN PHẨM",
+    date: "10.2026",
+    image: "/images/o2-500ml.png",
+    imageAlt: "Chai nước O2 500ml",
+    imageFit: "contain",
+    content: [
+      "O2 vừa bổ sung sản phẩm chai 500ml vào danh mục. Đây là lựa chọn bên cạnh chai 250ml và các sản phẩm nước O2 dung tích khác.",
+      "Xem thông tin chai 500ml trên trang sản phẩm hoặc liên hệ O2 để được hỗ trợ.",
+    ],
+  },
+  {
     slug: "lua-chon-binh-20l-cho-gia-dinh-va-van-phong",
     title: "Lựa chọn bình 20L cho nhu cầu sử dụng hằng ngày",
     excerpt: "Tổng quan về lựa chọn bình 20L trong danh mục sản phẩm O2.",
