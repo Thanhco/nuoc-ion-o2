@@ -2288,6 +2288,13 @@ html .product-card .product-card-image .product-visual.product-visual-bottle > i
 
 @media (max-width:767px) { .about-story__visual--500ml img { width:min(48%,210px); height:310px; } }
 
+/* The 20L source has transparent top/bottom padding; let its image box fill the mobile stage. */
+@media (max-width:768px) {
+  html .products-list .product-card .product-card-image .product-visual.product-visual-binh-20l-tieu-chuan > img {
+    max-height:108% !important;
+  }
+}
+
 /* Product-detail studio: diffused light, a quiet waterline and soft grounding. */
 .product-detail-visual {
   isolation:isolate;
