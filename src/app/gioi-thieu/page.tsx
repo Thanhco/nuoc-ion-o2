@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BreadcrumbJsonLd, Breadcrumbs } from "@/components/breadcrumbs";
+import { BreadcrumbJsonLd } from "@/components/breadcrumbs";
 import { Button } from "@/components/button";
 import { ArrowUpRight } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
@@ -16,19 +16,14 @@ const breadcrumbs = [{ label: "Trang chủ", href: "/" }, { label: "Giới thi�
 export default function AboutPage() {
   return (
     <>
-      <section className="about-hero">
-        <div className="about-hero__background" aria-hidden="true" />
-        <div className="about-hero__readability" aria-hidden="true" />
-        <div className="container">
-          <Breadcrumbs items={breadcrumbs} />
-          <div className="about-hero__grid">
-            <Reveal className="about-hero__copy-reveal">
-            <div className="about-hero__copy">
-              <p className="eyebrow">GIỚI THIỆU O2</p>
-              <h1><span>Nước uống O2</span><span>cho nhu cầu mỗi ngày.</span></h1>
-              <p>O2 cung cấp các lựa chọn nước uống đóng bình và đóng chai, phù hợp cho gia đình, văn phòng và nhu cầu sử dụng hằng ngày.</p>
-            </div>
-            </Reveal>
+      <section className="home-hero about-hero">
+        <div className="home-hero__background about-hero__background" aria-hidden="true" />
+        <div className="home-hero__readability" aria-hidden="true" />
+        <div className="container home-hero__container">
+          <div className="home-hero__content about-hero__content">
+            <Reveal className="home-hero__reveal" delay={0}><p className="home-hero__eyebrow">GIỚI THIỆU O2</p></Reveal>
+            <Reveal className="home-hero__reveal" delay={100}><h1 className="home-hero__title about-hero__title"><span>Nước uống O2</span><span>cho nhu cầu mỗi ngày.</span></h1></Reveal>
+            <Reveal className="home-hero__reveal" delay={200}><p className="home-hero__description">O2 cung cấp các lựa chọn nước uống đóng bình và đóng chai, phù hợp cho gia đình, văn phòng và nhu cầu sử dụng hằng ngày.</p></Reveal>
           </div>
         </div>
       </section>
