@@ -32,7 +32,7 @@ button { font:inherit; }
 .mobile-menu { display:none; border-top:1px solid var(--line); background:#fff; }
 
 .home-hero { position:relative; width:100%; min-height:clamp(520px,36vw,640px); overflow:hidden; isolation:isolate; }
-.home-hero__background { position:absolute; inset:0; z-index:0; background-image:url("/images/homepage.png"); background-repeat:no-repeat; background-size:cover; background-position:center 50%; }
+.home-hero__background { position:absolute; inset:0; z-index:0; background-image:url("/images/homepage.png?v=e3fe261a"); background-repeat:no-repeat; background-size:cover; background-position:center 50%; }
 .home-hero__readability { position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.92) 12%,rgba(255,255,255,.76) 23%,rgba(255,255,255,.50) 32%,rgba(255,255,255,.20) 40%,rgba(255,255,255,0) 48%); }
 .home-hero::after { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(to bottom,transparent 88%,rgba(255,255,255,.15) 94%,rgba(255,255,255,.45) 100%); }
 .home-hero__container { position:relative; z-index:2; display:flex; align-items:center; min-height:clamp(520px,36vw,640px); }
@@ -1734,9 +1734,9 @@ a.footer-contact-group:hover { color:#fff; transform:translateX(2px); }
   .back-to-top { transition:none; }
 }
 
-/* TEMP: replace with /images/lienhe.png when final contact artwork is available. */
+/* Contact hero artwork. */
 .contact-hero {
-  --contact-hero-image: url("/images/gioithieu.png?v=20260930-1");
+  --contact-hero-image: url("/images/contact.png?v=e3fe261a");
   position:relative;
   min-height:0;
   overflow:hidden;
