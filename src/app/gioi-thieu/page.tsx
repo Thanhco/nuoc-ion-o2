@@ -16,16 +16,17 @@ const breadcrumbs = [{ label: "Trang chủ", href: "/" }, { label: "Giới thi�
 export default function AboutPage() {
   return (
     <>
-      <section className="home-hero about-hero">
-        <div className="home-hero__background about-hero__background" aria-hidden="true" />
-        <div className="home-hero__readability" aria-hidden="true" />
-        <div className="container home-hero__container">
-          <div className="home-hero__content about-hero__content">
-            <Reveal className="home-hero__reveal" delay={0}><p className="home-hero__eyebrow">GIỚI THIỆU O2</p></Reveal>
-            <Reveal className="home-hero__reveal" delay={100}><h1 className="home-hero__title about-hero__title"><span>Nước uống O2</span><span>cho nhu cầu mỗi ngày.</span></h1></Reveal>
-            <Reveal className="home-hero__reveal" delay={200}><p className="home-hero__description">O2 cung cấp các lựa chọn nước uống đóng bình và đóng chai, phù hợp cho gia đình, văn phòng và nhu cầu sử dụng hằng ngày.</p></Reveal>
-          </div>
-        </div>
+      <section className="about-image-hero" aria-label="Giới thiệu O2">
+        <h1 className="about-image-hero__accessible-title">Nước uống O2 cho nhu cầu mỗi ngày.</h1>
+        <Image
+          className="about-image-hero__image"
+          src="/images/introduce.png"
+          alt="O2 cung cấp các lựa chọn nước uống đóng bình và đóng chai, phù hợp cho gia đình, văn phòng và nhu cầu sử dụng hằng ngày."
+          width={1774}
+          height={887}
+          sizes="100vw"
+          preload
+        />
       </section>
 
       <section className="about-statement">
